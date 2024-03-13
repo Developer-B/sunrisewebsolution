@@ -1,0 +1,45 @@
+.about-us-container {
+  text-align: center;
+}
+
+.about-us-heading {
+  margin-top: 50px;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+.about-us-image {
+  margin-bottom: 20px;
+}
+
+.about-us-text {
+  text-align: left;
+  max-width: 100%; 
+  padding: 0 20px; 
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .about-us-content {
+    flex-direction: row; 
+  }
+
+  .about-us-image {
+    flex: 1;
+    margin-right: 20px; 
+    margin-bottom: 0; 
+  }
+
+  .about-us-text {
+    flex: 2;
+    max-width: 100%; 
+    padding: 0; 
+  }
+}

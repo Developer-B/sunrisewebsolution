@@ -1,0 +1,30 @@
+.h2_heading {
+  width: 100%;
+  margin-top: 50px;
+  padding: 0;
+  text-align: center;
+}
+
+.h2_heading:after,
+.h2_heading:before {
+  display: inline-block;
+  height: 3px;
+  content: " ";
+  background-color: #999;
+  width: 140px;
+}
+
+.h2_heading:after {
+  margin: 0 0 8px 20px;
+}
+
+.h2_heading:before {
+  margin: 0 20px 8px 0;
+}
+
+@media (max-width: 768px) {
+  .h2_heading:after,
+  .h2_heading:before {
+    width: 100px; /* Adjust the width for smaller screens */
+  }
+}
