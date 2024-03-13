@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../Styling/GlobalStyle.css";
+import logo1 from "../Images/mobileapplogo.png";
 
 const CardCarousel = () => {
   useEffect(() => {
@@ -406,30 +407,6 @@ const CardCarousel = () => {
             filter: brightness(1);
           }
 
-          .card:nth-of-type(1) .image-container {
-            background-image: url("https://static.addtoany.com/images/dracaena-cinnabari.jpg");
-          }
-
-          .card:nth-of-type(2) .image-container {
-            background-image: url("https://www.w3schools.com/w3css/img_lights.jpg");
-          }
-
-          .card:nth-of-type(3) .image-container {
-            background-image: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-          }
-          .card:nth-of-type(4) .image-container {
-            background-image: url("https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-          }
-          .card:nth-of-type(5) .image-container {
-            background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg");
-          }
-          .card:nth-of-type(6) .image-container {
-            background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg");
-          }
-          .card:nth-of-type(7) .image-container {
-            background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg");
-          }
-
           .image-container {
             width: 8em;
             height: 8em;
@@ -473,37 +450,51 @@ const CardCarousel = () => {
         <h2 className="h2_heading">Our Services</h2>
         <div className="card-carousel">
           <div className="card">
-            <div></div>
+            <div className="image-container">
+              <img src={logo1} alt="image" />
+            </div>
             <b>Website Design</b>
             <button className="btn">Know More</button>
           </div>
           <div className="card">
-            <div></div>
+            <div className="image-container">
+              <img src={logo1} alt="image" />
+            </div>
             <b>Web Application Development</b>
             <button className="btn">Know More</button>
           </div>
           <div className="card">
-            <div></div>
+            <div className="image-container">
+              <img src={logo1} alt="image" />
+            </div>
             <b>Software Development</b>
             <button className="btn">Know More</button>
           </div>
           <div className="card">
-            <div></div>
+            <div className="image-container">
+              <img src={logo1} alt="image" />
+            </div>
             <b>Mobile App</b>
             <button className="btn">Know More</button>
           </div>
           <div className="card">
-            <div></div>
+            <div className="image-container">
+              <img src={logo1} alt="image" />
+            </div>
             <b>Graphics Design</b>
             <button className="btn">Know More</button>
           </div>
           <div className="card">
-            <div></div>
+            <div className="image-container">
+              <img src={logo1} alt="image" />
+            </div>
             <b>Web Hosting</b>
             <button className="btn">Know More</button>
           </div>
           <div className="card">
-            <div></div>
+            <div className="image-container">
+              <img src={logo1} alt="image" />
+            </div>
             <b>Domain Registration</b>
             <button className="btn">Know More</button>
           </div>

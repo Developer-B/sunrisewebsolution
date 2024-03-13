@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import "../Styling/GlobalStyle.css";
-import image from "../Images/aboutUs.png";
+import video from "../Videos/AboutVideo.mp4";
 
 const Container = styled.div`
   text-align: center;
-
+  margin-left: 50px;
   @media only screen and (min-width: 768px) {
     text-align: left;
   }
@@ -28,16 +28,6 @@ const Content = styled.div`
   }
 `;
 
-const Image = styled.div`
-  margin-bottom: 20px;
-
-  @media only screen and (min-width: 768px) {
-    flex: 1;
-    margin-right: 20px;
-    margin-bottom: 0;
-  }
-`;
-
 const Text = styled.div`
   text-align: left;
   max-width: 100%;
@@ -50,14 +40,32 @@ const Text = styled.div`
   }
 `;
 
+const VideoContainer = styled.div`
+  width: 300px; /* Adjust size as needed */
+  height: 300px; /* Adjust size as needed */
+  border-radius: 50%; /* This creates the circular shape */
+  overflow: hidden; /* Ensures the video stays within the circular container */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+  padding: 20px;
+`;
+
+const Video = styled.video`
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fills the circular container */
+`;
+
 const About = () => {
   return (
     <Container>
       <Heading className="h2_heading">About</Heading>
       <Content>
-        <Image>
-          <img src={image} alt="Company Logo" />
-        </Image>
+        <VideoContainer>
+          <Video autoPlay muted loop>
+            <source src={video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </Video>
+        </VideoContainer>
         <Text>
           <p>
             <strong>
