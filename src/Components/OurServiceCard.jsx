@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "../Styling/GlobalStyle.css";
 import logo1 from "../Images/mobileapplogo.png";
 
@@ -343,7 +344,7 @@ const CardCarousel = () => {
     <div>
       <style>
         {`
-          * {
+           * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -360,6 +361,9 @@ const CardCarousel = () => {
             --card-max-width: 280px;
             --card-height: 400px;
             --carousel-min-width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             z-index: 1;
             position: relative;
             margin: 60px auto;
@@ -371,8 +375,8 @@ const CardCarousel = () => {
 
           @media screen and (max-width: 640px) {
             .card-carousel {
-              margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2);
-              /* margin-left: 0; */
+              margin-left: calc((100vw - var(--carousel-min-width) - 0px) / 2);
+
             }
           }
 
@@ -454,49 +458,63 @@ const CardCarousel = () => {
               <img src={logo1} alt="image" />
             </div>
             <b>Website Design</b>
-            <button className="btn">Know More</button>
+            <NavLink to="/services/WebsiteDesign" className="btn">
+              Know More
+            </NavLink>
           </div>
           <div className="card">
             <div className="image-container">
               <img src={logo1} alt="image" />
             </div>
             <b>Web Application Development</b>
-            <button className="btn">Know More</button>
+            <NavLink to="/services/WebApplicationDevelopment" className="btn">
+              Know More
+            </NavLink>
           </div>
           <div className="card">
             <div className="image-container">
               <img src={logo1} alt="image" />
             </div>
             <b>Software Development</b>
-            <button className="btn">Know More</button>
+            <NavLink to="/services/SoftwareDevelopment" className="btn">
+              Know More
+            </NavLink>
           </div>
           <div className="card">
             <div className="image-container">
               <img src={logo1} alt="image" />
             </div>
             <b>Mobile App</b>
-            <button className="btn">Know More</button>
+            <NavLink to="/services/MobileApp" className="btn">
+              Know More
+            </NavLink>
           </div>
           <div className="card">
             <div className="image-container">
               <img src={logo1} alt="image" />
             </div>
             <b>Graphics Design</b>
-            <button className="btn">Know More</button>
+            <NavLink to="/services/GraphicsDesign" className="btn">
+              Know More
+            </NavLink>
           </div>
           <div className="card">
             <div className="image-container">
               <img src={logo1} alt="image" />
             </div>
             <b>Web Hosting</b>
-            <button className="btn">Know More</button>
+            <NavLink to="/services/WebHosting" className="btn">
+              Know More
+            </NavLink>
           </div>
           <div className="card">
             <div className="image-container">
               <img src={logo1} alt="image" />
             </div>
             <b>Domain Registration</b>
-            <button className="btn">Know More</button>
+            <NavLink to="/services/DomainRegistration" className="btn">
+              Know More
+            </NavLink>
           </div>
         </div>
         <a href="#" className="visuallyhidden card-controller">

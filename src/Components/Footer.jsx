@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 import "../Styling/FooterStyle.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -14,20 +15,20 @@ const Footer = () => {
                 <h3>OFFICE ADDRESS</h3>
                 <ul>
                   <li>
-                    <a href="tel:9667426556">
-                      <i className="bi bi-telephone-fill"></i>9667426556,
-                      9667426555
+                    <a href="tel:9667426555">
+                      <i className="bi bi-telephone-fill  active"></i>
+                      9667426556, 9667426555
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:info@sunrisewebsolution.com">
-                      <i className="bi bi-envelope-at-fill"></i>
+                    <a href="mailto:info@sunrisewebsolution.com ">
+                      <i className="bi bi-envelope-at-fill active"></i>
                       info@sunrisewebsolution.com
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i className="bi bi-geo-alt-fill"></i>
+                      <i className="bi bi-geo-alt-fill active"></i>
                       3rd Floor,
                       <br />
                       Triveni Commercial Hub,
@@ -45,19 +46,29 @@ const Footer = () => {
                 </div>
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <NavLink
+                      to="/"
+                      className="nav-link active"
+                      aria-current="page"
+                      href="#!"
+                    >
+                      Home
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="#">About</a>
+                    <NavLink to="/about" className="nav-link" href="#!">
+                      About
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="#">Services</a>
+                    <NavLink to="/Products" className="nav-link" href="#!">
+                      Products
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="#">Products</a>
-                  </li>
-                  <li>
-                    <a href="#">Contact</a>
+                    <NavLink to="/Contact" className="nav-link" href="#!">
+                      Contact
+                    </NavLink>
                   </li>
                 </ul>
               </div>
@@ -68,25 +79,67 @@ const Footer = () => {
                 </div>
                 <ul>
                   <li>
-                    <a href="#">Website Design</a>
+                    <NavLink
+                      to="/services/WebsiteDesign"
+                      className="dropdown-item"
+                      href="#!"
+                    >
+                      Website Design
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="#">Web Application Development</a>
+                    <NavLink
+                      to="/services/WebApplicationDevelopment"
+                      className="dropdown-item"
+                      href="#!"
+                    >
+                      Web Application Development
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="#">Software Development</a>
+                    <NavLink
+                      to="/services/SoftwareDevelopment"
+                      className="dropdown-item"
+                      href="#!"
+                    >
+                      Software Development
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="#">Mobile App</a>
+                    <NavLink
+                      to="/services/MobileApp"
+                      className="dropdown-item"
+                      href="#!"
+                    >
+                      Mobile App
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="#">Graphics Design</a>
+                    <NavLink
+                      to="/services/GraphicsDesign"
+                      className="dropdown-item"
+                      href="#!"
+                    >
+                      Graphics Design
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="#">Web Hosting</a>
+                    <NavLink
+                      to="/services/WebHosting"
+                      className="dropdown-item"
+                      href="#!"
+                    >
+                      Web Hosting
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="#">Domain Registration</a>
+                    <NavLink
+                      to="/services/DomainRegistration"
+                      className="dropdown-item"
+                      href="#!"
+                    >
+                      Domain Registration
+                    </NavLink>
                   </li>
                 </ul>
               </div>

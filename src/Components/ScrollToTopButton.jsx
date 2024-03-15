@@ -39,7 +39,7 @@ const ScrollToTopButton = () => {
             bottom: "20px",
             right: "20px", // Adjusted right value for smaller screens
             zIndex: "99",
-            backgroundColor: "#07e4fe",
+            backgroundColor: "skyblue",
             color: "black",
             border: "none",
             borderRadius: "50%", // Make it circular

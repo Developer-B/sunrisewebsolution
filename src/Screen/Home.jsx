@@ -2,7 +2,7 @@ import React from "react";
 import VideoBanner from "../Components/VideoBanner";
 import About from "./About";
 import "bootstrap/dist/css/bootstrap.min.css";
-import CardCarousel from "../Components/CardCarousel";
+import OurServiceCard from "../Components/OurServiceCard";
 import Products from "../Screen/Products";
 import LogoApp from "../Components/LogoApp";
 import ScrollToTopButton from "../Components/ScrollToTopButton";
@@ -13,7 +13,7 @@ const Home = () => {
     <div className={styles.homeContainer}>
       <VideoBanner />
       <About />
-      <CardCarousel />
+      <OurServiceCard />
       <Products />
       <LogoApp />
       <ScrollToTopButton />
